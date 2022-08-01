@@ -73,11 +73,21 @@
     font-weight: 600;
 }
 
+.eth::before {
+    content: url('../images/icon-ethereum.svg');
+    padding-right: 0.5rem;
+}
+
 .time-left {
     grid-area: time;
     justify-self: end;
     font-size: 1.8rem;
     font-weight: 400;
+}
+
+.time-left::before {
+    content: url('../images/icon-clock.svg');
+    padding-right: 0.5rem;
 }
 
 .separator {
@@ -92,6 +102,15 @@
     grid-area: author;
     font-size: 1.8rem;
     font-weight: 300;
+    display: flex;
+}
+
+.author img {
+    width: 20px;
+    height: 20px;
+    align-self: center;
+    margin-right: 1rem;
+    flex: 1;
 }
 
 .author span {
