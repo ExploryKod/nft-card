@@ -114,16 +114,16 @@ footer {
 
 .card-color {
     background-color: var(--very-dark-blue-card);
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .inner-color {
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .image-radius {
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .title-color {
