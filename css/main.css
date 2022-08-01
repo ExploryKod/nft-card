@@ -1,0 +1,182 @@
+@import 'global.css';
+
+.body-layout {
+    position: relative;
+    z-index: -1;
+    width: auto;
+    height: 105vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-container {
+    padding: 2.5rem;
+    width: auto;
+    max-width: 75%;
+    height: auto;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-inner-container {
+    width: 100%;
+    flex-shrink: 1;
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card-inner-container img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.product-description {
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+.description-inner-container {
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+        "title title"
+        "description description"
+        "eth time"
+        "sep sep"
+        "author author";
+}
+
+.title {
+    grid-area: title;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.description {
+    grid-area: description;
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+.eth {
+    justify-self: start;
+    font-size: 1.8rem;
+    grid-area: eth;
+    font-weight: 600;
+}
+
+.time-left {
+    grid-area: time;
+    justify-self: end;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.separator {
+    width: 100%;
+    grid-area: sep;
+
+    align-self: end;
+}
+
+.author {
+    justify-self: start;
+    grid-area: author;
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+.author span {
+    font-weight: 600;
+}
+
+footer {
+    max-height: 3vh;
+    margin-top: 1rem;
+    position: absolute;
+    bottom: 0;
+    left: center;
+}
+
+/* color and some style */
+
+.body-color {
+    background-color: var(--very-dark-blue-main);
+}
+
+.card-color {
+    background-color: var(--very-dark-blue-card);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.inner-color {
+    border-radius: 20px;
+}
+
+.image-radius {
+    border-radius: 20px;
+}
+
+.title-color {
+    color: var(--white);
+}
+
+.description-color {
+    color: var(--soft-blue);
+}
+
+.eth-color {
+    color: var(--cyan);
+}
+
+.time-left-color {
+    color: var(--soft-blue);
+}
+
+.sep-color {
+    border: 1px solid var(--very-dark-blue-line);
+}
+
+.author-color {
+    color: var(--soft-blue);
+    font-weight: 300;
+}
+
+.author-color span {
+    font-weight: 600;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width:370px) {
+
+    .title {
+        text-align: center;
+        justify-self: center;
+    }
+
+    .description {
+        justify-self: center;
+        font-size: 1.5rem;
+    }
+
+    .author {
+        justify-self: center;
+    }
+}
