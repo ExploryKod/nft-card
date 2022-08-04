@@ -23,7 +23,7 @@
 }
 
 .card-inner-container {
-    width: 100%;
+    max-width: 100%;
     flex-shrink: 1;
     flex-grow: 1;
 
@@ -64,7 +64,12 @@
     grid-area: description;
     font-weight: 400;
     font-size: 1.8rem;
+
+    display: flex;
+    flex-direction: column;
 }
+
+.description span {}
 
 .eth {
     justify-self: start;
@@ -188,12 +193,16 @@ footer {
     .title {
         text-align: center;
         justify-self: center;
+        display: flex;
+        gap: 1rem;
     }
 
     .description {
         justify-self: center;
         font-size: 1.5rem;
+        flex-direction: column;
     }
+
 
     .author {
         justify-self: center;
